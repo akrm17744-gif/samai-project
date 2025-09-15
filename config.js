@@ -1,8 +1,8 @@
 // Supabase Configuration
 // These values will be loaded from environment variables during deployment
 const SUPABASE_CONFIG = {
-    url: import.meta.env.VITE_SUPABASE_URL  process.env.SUPABASE_URL  'https://skjddytehplveaeceogb.supabase.co', // Fallback for local development
-    anonKey: import.meta.env.VITE_SUPABASE_ANON_KEY  process.env.SUPABASE_ANON_KEY  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdyaW5xaXlsZnNpdXhycHlrcXVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc3OTMyNjMsImV4cCI6MjA3MzM2OTI2M30.Sv-WvrdRzO3kYjBmeGjaY84KUQ7GVaMmt0I7kQpH9-U' // Fallback for local development
+    url: import.meta.env.VITE_SUPABASE_URL 'https://skjddytehplveaeceogb.supabase.co', // Fallback for local development
+    anonKey: import.meta.env.VITE_SUPABASE_ANON_KEY  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdyaW5xaXlsZnNpdXhycHlrcXVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc3OTMyNjMsImV4cCI6MjA3MzM2OTI2M30.Sv-WvrdRzO3kYjBmeGjaY84KUQ7GVaMmt0I7kQpH9-U' // Fallback for local development
 };
 
 // Initialize Supabase client
