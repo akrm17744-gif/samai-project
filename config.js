@@ -1,9 +1,11 @@
 // Supabase Configuration
 // Replace these values with your actual Supabase project credentials
-const SUPABASE_CONFIG = {
-    url: 'https://skjddytehplveaeceogb.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdyaW5xaXlsZnNpdXhycHlrcXVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc3OTMyNjMsImV4cCI6MjA3MzM2OTI2M30.Sv-WvrdRzO3kYjBmeGjaY84KUQ7GVaMmt0I7kQpH9-U'
-};
+import { createClient } from '@supabase/supabase-js'
+const supabaseUrl = 'https://skjddytehplveaeceogb.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+
 
 // Initialize Supabase client
 let supabase;
